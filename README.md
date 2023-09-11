@@ -18,4 +18,6 @@ python3 play.sh
 ## Change Log
 
 ### September 10, 2023
-Initial release. My fiance was playing Animal Crossings: New Horizon and one of the characters played this game. I thought it would be fun to code it for no reason at all. Hope you enjoy!
+* Initial release. My fiance was playing Animal Crossings: New Horizon and one of the characters played this game. I thought it would be fun to code it for no reason at all. Hope you enjoy!
+
+* Added a fun little title screen too :)

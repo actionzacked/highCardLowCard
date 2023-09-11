@@ -2,6 +2,8 @@ import os
 import time
 import random
 
+from functions import display_title_screen
+
 def play_round(playerName):
     # Init
     letsPlay = True
@@ -16,10 +18,11 @@ def play_round(playerName):
         os.system('clear')
 
         # Scoreboard
+        display_title_screen()
         print("=== SCORE BOARD ===")
-        print(f"Round: {str(currentRound)}")
-        print(f"{playerName}: {str(playerScore)}")
-        print(f"Computer: {str(computerScore)}")
+        print(f"=> Round: {str(currentRound)}")
+        print(f"=> {playerName}: {str(playerScore)}")
+        print(f"=> Computer: {str(computerScore)}")
         print("===================")
 
         # Card Deck
@@ -73,6 +76,7 @@ def play_round(playerName):
 
         # Update Game
         currentRound += 1
+        nextRound = True
         if playerScore == winningScore:
             # Display Text
             print(f"You won the GAME!!! Great job, {playerName}!!!")
@@ -96,9 +100,6 @@ def play_round(playerName):
     return
 
 def play_game():
-    # Clear Screen
-    os.system('clear')
-
     # Init
     playAnotherGame = True
 
@@ -114,15 +115,22 @@ def play_game():
         os.system('clear')
 
         # Keep playing?
-        keepPlaying = input(f"Would you like to keep playing, {playerName}? [y/n] ").lower().strip()
+        display_title_screen()
+        keepPlaying = input(f"\nWould you like to keep playing, {playerName}? [y/n] ").lower().strip()
         if keepPlaying == "y":
-            print("Great! Let's play!")
+            print("\nGreat! Let's play!\n")
+            time.sleep(3)
         else:
-            print(f"K..fine... Bye.")
+            print(f"\nK..fine... Bye..\n")
+            time.sleep(3)
             playAnotherGame = False
     
     # Leave Game
     return
 
 if __name__ == "__main__":
+    # Display Title Screen
+    display_title_screen()
+
+    # Play the game!
     play_game()
