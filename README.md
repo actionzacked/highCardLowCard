@@ -1,5 +1,20 @@
 # High Card, Low Card
 
+  _    _ _       _        _____              _ 
+ | |  | (_)     | |      / ____|            | |
+ | |__| |_  __ _| |__   | |     __ _ _ __ __| |
+ |  __  | |/ _` | '_ \  | |    / _` | '__/ _` |
+ | |  | | | (_| | | | | | |___| (_| | | | (_| |
+ |_|  |_|_|\__, |_| |_|  \_____\__,_|_|  \__,_|
+  _         __/ |        _____              _  
+ | |       |___/        / ____|            | | 
+ | |     _____      __ | |     __ _ _ __ __| | 
+ | |    / _ \ \ /\ / / | |    / _` | '__/ _` | 
+ | |___| (_) \ V  V /  | |___| (_| | | | (_| | 
+ |______\___/ \_/\_/    \_____\__,_|_|  \__,_| 
+                                               
+            // Action Zacked //
+
 ## Decription
 Played with a deck of cards numbered 1 through 9. The dealer shuffles the deck and then draws a random card. The player then guesses if the next card drawn will be HIGHER or LOWER than the first card.  
 
